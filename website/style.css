@@ -1,0 +1,54 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, rgb(56, 56, 56), white);
+    animation-name: toUp;
+    animation-duration: 1.5s;
+}
+h1{
+    color: rgba(255, 0, 0);
+}
+form{
+    background-color: rgb(200, 200, 200);
+    max-width: 350px;
+    border-radius: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 25px;
+    box-shadow: 5px 5px 15px hsla(0, 0%, 0%, 0.8);
+}
+#textBox{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    border: 2px outset hsla(0, 0%, 0%, 0.8);
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+label{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+button{
+    margin-top: 15px;
+    background-color: orange;
+    border-radius: 8px;
+    border: 2px outset hsla(0, 0%, 0%, 0.8);
+    font-size: 1.5em;
+    box-shadow: 2px 2px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(254, 199, 97);
+    color: rgb(61, 61, 61);
+}
+button:active{
+    background-color: rgb(255, 228, 192);
+    position: relative;
+    border-style: hidden;
+    top: 2px;
+    left: 2px;
+}
+@keyframes toUp {
+    from{transform: translateY(200px);}
+    
+}
